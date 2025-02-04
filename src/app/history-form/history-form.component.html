@@ -1,0 +1,49 @@
+<div class="medical-history-form-container">
+  <h2>Add Medical History</h2>
+  <form [formGroup]="medicalHistoryForm" (ngSubmit)="onSubmit()">
+    <label>Name:</label>
+    <input formControlName="name" type="text" />
+
+    <label>Age:</label>
+    <input formControlName="age" type="number" />
+
+    <label>Sex:</label>
+    <select formControlName="sex">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label>Mobile No:</label>
+    <input formControlName="mobileNo" type="text" />
+
+    <label>Address:</label>
+    <input formControlName="address" type="text" />
+
+    <label>Email:</label>
+    <input formControlName="email" type="email" />
+
+    <label>Disease 1:</label>
+    <input formControlName="disease1" type="text" />
+
+    <label>Medicine 1:</label>
+    <input formControlName="medicine1" type="text" />
+
+    <label>Disease 2:</label>
+    <input formControlName="disease2" type="text" />
+
+    <label>Medicine 2:</label>
+    <input formControlName="medicine2" type="text" />
+
+    <label>Allergic to Medicine:</label>
+    <input formControlName="medicineAllergicTo" type="text" />
+
+    <label *ngIf="medicalHistoryForm.controls['sex'].value === 'Female'">Menstruation Cycle Regular:</label>
+    <select *ngIf="medicalHistoryForm.controls['sex'].value === 'Female'" formControlName="menstruationCycleRegular">
+      <option value="True">True</option>
+      <option value="False">False</option>
+    </select>
+
+    <button type="submit">Save Medical History</button>
+  </form>
+</div>
+

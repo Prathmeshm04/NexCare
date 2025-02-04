@@ -1,0 +1,49 @@
+<!-- <header>
+  <div class="header-container">
+    <div class="logo">
+      <a routerLink="/">NexCare</a>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/">Health Library</a></li>
+        <li><a routerLink="/">Symptoms Checker</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li *ngIf="!isLoggedIn()"><a routerLink="/login">Login</a></li>
+        <li *ngIf="isLoggedIn()">
+          <a routerLink="/profile">{{ userEmail }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header> -->
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a routerLink="/">NexCare</a>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/">Health Library</a></li>
+        <li><a routerLink="/">Symptoms Checker</a></li>
+        <li><a routerLink="/services">Services</a></li>
+
+
+        <li *ngIf="isLoggedIn()" class="profile-dropdown">
+          <a href="#" (click)="toggleDropdown()">Profile</a>
+
+
+          <ul class="dropdown-menu" *ngIf="dropdownOpen">
+            <li><strong>Email:</strong> {{ userEmail }}</li>
+            <li><a href="#" (click)="logout()">Logout</a></li>
+          </ul>
+        </li>
+
+
+        <li *ngIf="!isLoggedIn()"><a routerLink="/login">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

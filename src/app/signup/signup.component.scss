@@ -1,0 +1,169 @@
+
+
+// .registration-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f9f9f9;
+
+//   .registration-image {
+//     flex: 1;
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//     }
+//   }
+
+//   .registration-form {
+//     flex: 1;
+//     padding: 2rem;
+//     background-color: #fff;
+//     border-radius: 10px;
+//     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+//     h1 {
+//       font-size: 2rem;
+//       color: #00753e;
+//       margin-bottom: 1.5rem;
+//       text-align: center;
+//     }
+
+//     form {
+//       display: flex;
+//       flex-direction: column;
+
+//       label {
+//         margin: 0.5rem 0;
+//         font-size: 1rem;
+//         color: #333;
+//       }
+
+//       input {
+//         padding: 0.5rem;
+//         margin-bottom: 1rem;
+//         border: 1px solid #ccc;
+//         border-radius: 5px;
+//         font-size: 1rem;
+//       }
+
+//       .text-danger {
+//         color: #dc3545;
+//         font-size: 0.875rem;
+//         margin-bottom: 1rem;
+//       }
+
+//       button {
+//         padding: 0.7rem;
+//         background-color: #00753e;
+//         color: #fff;
+//         border: none;
+//         border-radius: 5px;
+//         cursor: pointer;
+//         font-size: 1rem;
+//         text-transform: uppercase;
+//         margin-top: 1rem;
+
+//         &:hover {
+//           background-color: #00582b;
+//         }
+
+//         &:disabled {
+//           background-color: #ccc;
+//           cursor: not-allowed;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+
+  .registration-image {
+    flex: 1;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .registration-form {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      font-size: 2rem;
+      color: #00753e;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    // Center the "Already Registered? Login" link
+    .already-registered-link {
+      display: block;
+      margin: 1rem 0; // Space above and below the link
+      color: #00753e; // Green color for the link
+      text-decoration: none;
+      text-align: center; // Center the link
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      input {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .text-danger {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        padding: 0.7rem;
+        background-color: #00753e;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: 1rem;
+
+        &:hover {
+          background-color: #00582b;
+        }
+
+        &:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

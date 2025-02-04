@@ -1,0 +1,162 @@
+// .login-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f9f9f9;
+
+//   .login-image {
+//     flex: 1;
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//     }
+//   }
+
+//   .login-form {
+//     flex: 1;
+//     padding: 2rem;
+//     background-color: #fff;
+//     border-radius: 10px;
+//     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+//     h2 {
+//       font-size: 2rem;
+//       color: #00753e;
+//     }
+
+//     a {
+//       display: block;
+//       margin-bottom: 1rem;
+//       color: #00753e;
+//       text-decoration: none;
+
+//       &:hover {
+//         text-decoration: underline;
+//       }
+//     }
+
+//     form {
+//       display: flex;
+//       flex-direction: column;
+
+//       label {
+//         margin: 0.5rem 0;
+//         font-size: 1rem;
+//         color: #333;
+//       }
+
+//       input {
+//         padding: 0.5rem;
+//         margin-bottom: 1rem;
+//         border: 1px solid #ccc;
+//         border-radius: 5px;
+//         font-size: 1rem;
+//       }
+
+//       button {
+//         padding: 0.7rem;
+//         background-color: #00753e;
+//         color: #fff;
+//         border: none;
+//         border-radius: 5px;
+//         cursor: pointer;
+
+//         &:hover {
+//           background-color: #00582b;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+
+  .login-image {
+    flex: 1;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .login-form {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      font-size: 2rem;
+      color: #00753e;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .signup-link {
+      display: block;
+      margin-bottom: 1rem;
+      color: #00753e;
+      text-decoration: none;
+      text-align: center; // Center the link
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      input {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 0.7rem;
+        background-color: #00753e;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #00582b;
+        }
+      }
+    }
+
+    .text-center {
+      margin-top: 1rem;
+
+      .btn-link {
+        color: #00753e;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+

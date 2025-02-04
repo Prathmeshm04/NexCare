@@ -1,0 +1,38 @@
+.vision {
+  background-image: url('/assets/images/visionbackground.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  text-align: center;
+  color: #ffffff;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: #1e5631;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: black;
+  }
+
+  .learn-more {
+    padding: 10px 30px;
+    background-color: #1e5631;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .learn-more:hover {
+    background-color: #144920;
+  }
+}

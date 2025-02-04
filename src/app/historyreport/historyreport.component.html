@@ -1,0 +1,30 @@
+<div class="medical-history-report">
+  <h2>Medical History Report</h2>
+
+  <!-- Check if medicalHistory is not null and has data -->
+  <div *ngIf="medicalHistory && medicalHistory.length > 0; else noHistory">
+    <div *ngFor="let history of medicalHistory" class="history-item">
+      <p><strong>Name:</strong> {{ history.name }}</p>
+      <p><strong>Age:</strong> {{ history.age }}</p>
+      <p><strong>Sex:</strong> {{ history.sex }}</p>
+      <p><strong>Mobile No:</strong> {{ history.mobileNo }}</p>
+      <p><strong>Address:</strong> {{ history.address }}</p>
+      <p><strong>Disease 1:</strong> {{ history.disease1 || 'N/A' }}</p>
+      <p><strong>Medicine 1:</strong> {{ history.medicine1 || 'N/A' }}</p>
+      <p><strong>Disease 2:</strong> {{ history.disease2 || 'N/A' }}</p>
+      <p><strong>Medicine 2:</strong> {{ history.medicine2 || 'N/A' }}</p>
+      <p><strong>Allergic to:</strong> {{ history.medicineAllergicTo || 'N/A' }}</p>
+      <p *ngIf="history.sex === 'Female'">
+        <strong>Menstruation Cycle Regular:</strong> {{ history.menstruationCycleRegular || 'N/A' }}
+      </p>
+    </div>
+  </div>
+
+  <!-- If no medical history is found -->
+  <ng-template #noHistory>
+    <p>No medical history found.</p>
+    <a href="/historyform">Enter the medical history</a>
+  </ng-template>
+</div>
+
+

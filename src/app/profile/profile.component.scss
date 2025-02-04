@@ -1,0 +1,87 @@
+/* Dropdown styling */
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-dropdown a {
+  font-weight: bold;
+  color: #1e5631;
+}
+
+.profile-dropdown .dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px;
+  margin-top: 10px;
+  right: 0; /* Align to the right */
+}
+
+.profile-dropdown .dropdown-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.profile-dropdown .dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu.show {
+  display: block; /* Show dropdown on toggle */
+}
+
+/* Fix z-index issues so the dropdown doesn't hide behind elements */
+.navigation {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.dropdown-menu {
+  position: absolute;
+  right: 0; /* Align dropdown to the right of the container */
+  top: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 200px;
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  color: #1e5631;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu strong {
+  font-weight: bold;
+}
+
+/* Ensure dropdown stays within the screen */
+.dropdown-menu {
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  max-width: 100%; /* Prevent it from going outside the screen */
+}

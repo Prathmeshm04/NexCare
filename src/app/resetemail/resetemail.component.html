@@ -1,0 +1,20 @@
+<div class="container mt-4">
+  <div class="card">
+    <h1>Reset Password</h1>
+    <form #resetPasswordForm="ngForm" (ngSubmit)="resetPasswordForm.form.valid && Reset()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" [(ngModel)]="email" name="email" required email class="form-control" id="email" placeholder="Enter Email" pattern="[a-zA-Z0-9.-_]{1,}@gmail\.com">
+        <div *ngIf="resetPasswordForm.controls['email']?.touched && resetPasswordForm.controls['email'].errors?.['required']" class="text-danger">
+          Email is required.
+        </div>
+        <div *ngIf="resetPasswordForm.controls['email']?.touched && resetPasswordForm.controls['email'].errors?.['pattern']" class="text-danger">
+          Email must be of the form gmail.com
+        </div>
+      </div>
+
+      <button type="submit" [disabled]="resetPasswordForm.invalid" class="btn btn-primary">Reset Password</button>
+    </form>
+  </div>
+</div>
+
